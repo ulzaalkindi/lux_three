@@ -7,6 +7,25 @@
   background-color: rgb(56, 55, 55);
 } */
 
+/* utils */
+.grid {
+  grid-auto-flow: row dense;
+  grid-auto-rows: minmax(180px, auto);
+}
+.stretched-link {
+  @apply absolute inset-0 z-10;
+}
+/* end utils */
+
+/* card */
+.card .card-shadow {
+  @apply transition duration-300 shadow-none h-full;
+}
+.card:hover .card-shadow {
+  @apply shadow-lg;
+}
+/* end card */
+
 /** Overlay */
 .overlay {
   @apply absolute;
